@@ -41,7 +41,7 @@ public class Shine {
 		    BrowserFactory.fileupload();
 		    Thread.sleep(1000);
 		    driver.findElement(By.xpath(".//*[@class='submitred resumeupload']")).click();
-		    Thread.sleep(5000);
+		    Thread.sleep(2000);
 		    String conmsg = driver.findElement(By.id("confirmMessage")).getText();
 		    String Expmsg = "Your naukri profile has been updated with your uploaded resume";
 		    Assert.assertEquals("Meesage not found", Expmsg, conmsg);

@@ -32,11 +32,15 @@ public class Monster {
 			Thread.sleep(2500);
 			driver.findElement(By.xpath("//*[text()='Do not Display Again']")).click();
 			driver.findElement(By.xpath("//*[text()='Update Profile']")).click();
+			Thread.sleep(1000);
 			driver.findElement(By.id("edit_resume_section9_open")).click();
+			Thread.sleep(1000);
 			DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy ");
 			Date date = new Date();
 			String date1= dateFormat.format(date);
+			Thread.sleep(1000);
 			driver.findElement(By.name("title")).clear();
+			Thread.sleep(1000);
 			driver.findElement(By.name("title")).sendKeys("Abhishek Resume" + "_" + date1);
 			driver.findElement(By.linkText("Upload New")).click();
 			Thread.sleep(2000);
