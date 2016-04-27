@@ -29,7 +29,7 @@ public class BrowserFactory {
 	
 	public static void fileupload (){
 		
-		upload.sendKeys("E:\\Important Doc\\AbhishekResume.docx");
+		upload.sendKeys("/var/lib/jenkins/workspace/Test Project/Livepro/Resume/AbhishekResume.docx");
 	}
 	
 	
