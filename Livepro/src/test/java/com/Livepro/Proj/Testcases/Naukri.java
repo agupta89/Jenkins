@@ -38,7 +38,7 @@ public class Naukri {
 		}
 
 	catch(AssertionError e){
-		
+		String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Naukri");
 		throw e;
 
 	}
