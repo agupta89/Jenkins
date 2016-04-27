@@ -44,12 +44,12 @@ public class TimesJob {
 	}
 	catch (NoSuchElementException e)
 	{
-		
+		String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Timesjob");
 	throw e;
 	}
 	catch(Throwable e){
 
-
+      String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Timesjob");
 		
 	throw e;
 

@@ -61,12 +61,12 @@ public class Monster {
 	}
 	catch (NoSuchElementException e)
 	{
-		
+		String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Monster");
 	throw e;
 	}
 	catch(Throwable e){
 
-
+         String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Monster");
 		
 	throw e;
 

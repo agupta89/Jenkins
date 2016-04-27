@@ -32,6 +32,26 @@ public class BrowserFactory {
 		upload.sendKeys("/var/lib/jenkins/workspace/Test Project/Livepro/Resume/AbhishekResume.docx");
 	}
 	
+	public static String captureScreenshot(WebDriver driver, String screenShotName) throws IOException
+	    {
+		
+		try {
+			
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File sourcepath = ts.getScreenshotAs(OutputType.FILE);
+		String dest = "/var/lib/jenkins/workspace/Test Project/Livepro/screenshots/" + screenShotName + ".png";  //location for images
+	    File destination = new File(dest);
+	    FileUtils.copyFile(sourcepath,destination);
+	    return dest;
+		}
+		catch (Exception e)
+		{
+			System.out.println("Exception Taking screenshot" + e.getMessage());
+			return e.getMessage();
+		}
+		
+	}
+	
 	
 
 }

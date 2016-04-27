@@ -44,12 +44,12 @@ public class Naukri {
 	}
 	catch (NoSuchElementException e)
 	{
-		
+		String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Naukri");
 	throw e;
 	}
 	catch(Throwable e){
 
-
+        String Screenshot_path = BrowserFactory.captureScreenshot(driver, "Naukri");
 		
 	throw e;
 
